@@ -1,0 +1,447 @@
+/*
+
+My Custom CSS
+=============
+
+Author:  Fariz Anwardeen
+Updated: August 2013
+Notes:	 Hand coded for Fariz Anwardeen
+
+*/
+
+
+/* --------------------------------------
+   Layout
+   -------------------------------------- */
+/* Centering the features panel because it is left aligned*/
+
+
+
+#features{
+   text-align: center;
+}
+/*the image within feature need to have margin*/
+/*first number is top, second one is right/left and the last one would be bottom */
+/*20px on the bottom 0 on top and 0 on right and left */
+#features img{
+   margin:0 0 20px;
+}
+
+/*Style for the modal window send button...input message is the text area*/
+#inputMessage{
+   margin-bottom: 15px;
+}
+
+#userbar {
+	padding-top:15px;
+	float: right;
+	width: 100px;
+	
+}
+
+
+/*Syling the footer*/
+footer{
+   background:#151515;
+   color:#eee;
+   font-size: 11px;
+   padding: 20px;
+}
+/*Syling the links*/
+a { 
+font-family: arial, 'times new roman', sans-serif; 
+font-size: 1em; 
+font-weight: bold; 
+/*color: #7f7fff; */
+/* color : #333333; */
+color: #006699;
+
+text-decoration: none;
+} 
+
+.bigheader h2{
+background: -webkit-linear-gradient(left top, #FF3333 , black); /* For Safari 5.1 to 6.0 */
+    background: -o-linear-gradient(bottom right, #FF3333, black); /* For Opera 11.1 to 12.0 */
+    background: -moz-linear-gradient(bottom right, #FF3333, black); /* For Firefox 3.6 to 15 */
+    background: linear-gradient(to bottom right, #FF3333 , black); /* Standard syntax (must be last) */
+	 
+padding:10px;
+color:white;
+font-size:35px;
+font-family: 'Libre Baskerville', serif;
+border-top: 1px solid #BDBDBD;
+border-bottom: 1px solid #BDBDBD;
+//border: 1px solid blue;
+margin-top: 40px;
+margin-bottom:-25px;
+border-radius: 8px;
+
+}
+
+
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
+/*gives a smoother font*/   
+body{
+     -webkit-font-smoothing: antialiased;
+     text-rendering: optimizelegibility;
+}
+
+
+
+/* CSS to customize the well to make it look better*/
+
+/* selecting page header within the well and making the margin smaller*/
+.well .page-header{
+   margin-top:0;
+
+}
+/* selecting h1 header within the well and making the margin smaller*/
+.well .page-header h1{
+   margin-top:0;
+  
+}
+/*removing the bullet points for an unordered list*/
+ul.unstyled{
+   list-style: none;
+   padding: 0;
+   
+}
+
+
+#logo{
+margin-top:20px;
+margin-bottom:-45px;
+background-color:white;
+}
+#logoimage{
+width:650px; 
+height: 120px;
+margin-top:20px;
+margin-left:-30px;
+background-color:white
+}
+
+
+
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+
+   
+#searchInput{
+   width: 200px;
+
+}
+
+.navbar{
+background-color:#B40404;
+
+}
+/* adding padding to the navbar 13px is top and bottom padding and 15 is left and right padding*/
+.navbar-brand{
+   padding:13px 15px;
+   
+}
+
+.navbar .nav > li > a {
+    font-size:15px;
+    color: white;
+	font-weight: bold;
+}
+.navbar.navbar-nav >li>a{
+	color:green;
+}
+.signinlist{
+padding-top:10px;
+
+list-style-type: none;
+}
+.signinlist>li>a{
+color:white;
+margin-left:10px;
+}
+
+
+/* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+
+   
+/* Giving some space between the carousel and the alert*/
+.alert {
+   margin-top: 12px ;
+   /*We dont want our alert box to display by default dont show it*/
+   display:none;
+}
+
+/*Giving some space between the carousel and the callout*/
+.well {
+   margin:20px 0;
+}
+
+/*Adding some space for the temporary placeholder image*/
+.tabbable img.thumbnail{
+   margin: 0 20px 10px 0;
+}
+
+
+/*adding styles to thumbnails, give margin on top and bottom*/
+.thumbnails{
+  
+   margin: 20px 0;
+   
+}
+/*Select each thumbnail and give a it position of relative because to position the pricetags absolute*/
+/*We need to Postion prictag within the thumbnail, so we position the parent as relative */
+.thumbnail{
+   position: relative;
+   margin-top:20px;
+   
+}
+.thumbimages{
+border: 1px outset black;
+border-radius: 10px;
+padding:4px;
+}
+
+.recentpicture{
+   
+   margin-top:0px;
+   height:405px;
+   width:700px;
+   padding:3px;
+   border: 1px solid black;
+}
+
+/*Make the header size smaller*/
+.caption h4{
+   font-size: 20px;
+   margin-top: 30px;
+   line-height: 20px;
+   
+}
+
+.paraheader{
+//background-color:#00123b;
+padding-bottom:10px;
+color:#A52A2A;
+font-size:30px;
+font-family: 'Libre Baskerville', serif;
+
+
+border-bottom: 1px solid #BDBDBD ;
+//border: 1px solid blue;
+margin-top: 40px;
+margin-bottom:25px;
+}
+.trendster{
+color:#3333FF;
+font-family: 'Lobster', cursive;
+}
+
+.otherstoriestext{
+padding-top:30px;
+font-size:20px;
+}
+.otherstoriestext2{
+margin-top:-55px;
+
+
+font-size:24px;
+}
+.otherstoriesspace{
+margin-bottom:30px;
+}
+.otherstoriesborder{
+border: 2px solid black;
+padding-top:20px;
+margin:20px;
+background-color:#FFFFF0;
+border-radius: 10px;
+}
+
+
+#recentcaption{
+   padding-top:20px;
+   
+   margin-top:0px;
+   font-size:27px;
+}
+
+.popularpicture{
+   
+   margin-top:10px;
+   
+   height:521px;
+   width:900px;
+}
+.popularcaption{
+   
+   padding-top:20px;
+   margin-top:0px;
+   font-size:30px;
+   
+}
+
+.mostrecentside{
+margin-top:30px;
+}
+.description{
+padding:30px;
+background-color:#E6E6E6;
+}
+
+
+.tablecell3{
+height: 90px;
+width: 380px;
+overflow: hidden;
+}
+.tablecell2{
+height: 70px;
+width: 250px;
+overflow: hidden;
+}
+
+
+.tablecell1{
+height: 115px;
+overflow: hidden;
+}
+
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* we use media queries to load the proper image sizes for different browser sizes*/
+/* Sytles will load depending of the size of the browser*/
+
+/* Portrait & landscape phone */
+
+/* if max width is no larger that 480px that this will load*/
+@media (max-width: 480px) {
+ 
+   
+}
+
+/* Landscape phone to portrait tablet */
+
+/* if max width is no larger that 768px that this will load*/
+/* We say everything below 768 load these styles that is why we dont use 480px*/
+@media (max-width: 768px) {
+ 
+    
+	
+   
+}
+
+/* Large desktop */
+/* if min width of viewport is 1200px that this will load*/
+@media (min-width: 1200px) {
+	.container{
+		max-width:1200px;
+		
+	}
+  
+}
+
+/* Styles for Watchinp.php  */
+
+#outerbox{
+background-color:#99CCFF;
+margin-top:20px;
+border: 1px solid black;
+ margin-right:280px;
+ border-radius: 10px;
+}
+.news{
+margin-right:20px;
+border: 2px solid black;
+padding-left:20px;
+padding-top:20px;
+background-color:#FFFFF0;
+border-radius: 10px;
+margin-bottom:20px;
+
+}
+.newsarticle{
+margin-right:30px;
+}
+.picture{
+float: left;
+padding-right:20px;
+}
+#alignnews{
+margin-left:160px;
+margin-right:160px;
+}
+#date{
+margin-left:100px;
+}
+#submit{
+    width: 6em;  height: 1.5em;
+	background-color:#99CCFF;
+	float:right;
+	margin-right:-150px;
+	margin-top:5px;
+	margin-bottom:20px;
+	padding-bottom:35px;
+}
+
+/*News watching.php page*/
+.videoalignment{
+margin-left:145px;
+margin-bottom: 50px;
+}
+
+#aligncomments{
+margin-left:145px;
+margin-right:140px;
+}
+#comment{
+margin-left:145px;
+
+}
+#signuptext{
+margin-left:145px;
+margin-right:140px;
+}
+.form-group{
+margin-left:15px;
+margin-right:319px;
+}
+#notesBox{
+background-color: #FFFFE0;
+}
+#friendReqBox{
+background-color: #FFFFE0;
+}
+#blankspaces{
+padding-bottom:160px;
+}
+
+.list-group{
+
+
+}
+.list-group-item{
+height:70px;
+border-radius: 18px;
+background-color: #FFFFEB;
+}
+#list-group-item-heading{
+color: #006699;
+font-size:16px;
+}
+#wikiimage{
+height:200px;
+width:200px;
+
+}
+#wikitext{
+overflow-x: hidden;width: 200px; 
+}
